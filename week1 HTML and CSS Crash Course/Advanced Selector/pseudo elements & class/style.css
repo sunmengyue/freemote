@@ -1,0 +1,53 @@
+/* 1. state based, depend on what the user is doing */
+
+h1 {
+  color: skyblue;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: cornflowerblue;
+}
+
+input:focus {
+  color: crimson;
+}
+
+/* 2. non-state-based */
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  margin: 10px;
+}
+/* 
+.box:nth-child(2) {
+  background-color: rebeccapurple;
+}
+.box:nth-child(3) {
+  background-color: greenyellow;
+}
+.box:nth-child(4) {
+  background-color: royalblue;
+} */
+
+.box:first-of-type {
+  background-color: salmon;
+}
+
+.box:first-of-type:hover {
+  transform: translateY(-2px);
+}
+
+/* 3. pseudo elements */
+.box:nth-of-type(2)::before {
+  content: '🗿 ';
+}
+
+ul {
+  list-style: none;
+}
+
+ul > li::before {
+  content: '✅';
+}
