@@ -1,0 +1,13 @@
+h1 {
+  color: salmon;
+  transition: 1s ease color;
+  font-size: 30px;
+  transition: 1s ease all;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: orange;
+  transition: 1s ease all;
+  transform: translateY(2rem);
+}
