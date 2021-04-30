@@ -1,0 +1,38 @@
+/* descendent */
+
+.container-one .secondary {
+  /* apply the style to all the sencondary class inside container one no matter how deep it is */
+  color: skyblue;
+}
+
+.container-one > p {
+  color: slateblue;
+}
+
+/* Comma, multiple selectors */
+h2,
+.secondary {
+  font-size: 2rem;
+}
+
+/* elements with class */
+
+/* in this case the specificity is less than .container-one .secondary */
+h1.secondary {
+  color: green;
+}
+
+/* Adjacent Selector */
+h1 + h2 {
+  /* This means the h2 right next to h1 */
+  font-style: italic;
+}
+
+h2 + p {
+  font-weight: bold;
+}
+
+/* Same level selector */
+.secondary ~ p {
+  color: salmon;
+}
