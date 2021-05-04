@@ -1,0 +1,13 @@
+a {
+  margin: 20px;
+  display: inline-block;
+  height: 50px;
+  /* inline element doesn't have top bottom, margin and padding, or heights */
+}
+
+img {
+  /* by default, image is inline display */
+  width: 300px;
+  object-fit: contain;
+  display: block;
+}

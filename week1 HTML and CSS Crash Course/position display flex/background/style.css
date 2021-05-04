@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15%;
+}
+
+#hero {
+  /* background-image: url('./flower.jpg');
+  background-size: 100%;
+  background-position: center; */
+  background: bottom / 100% url('flower.jpg');
+  height: 400px;
+}
