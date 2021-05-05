@@ -1,0 +1,34 @@
+.box-container {
+  width: 80%;
+  height: 50%;
+  background: skyblue;
+  margin: auto;
+  position: relative; /* if this line is removed, the box will be relative to the body */
+  height: 200vh;
+}
+
+.box {
+  width: 30%;
+  height: 30%;
+  background: cornflowerblue;
+  margin: 20px auto;
+  /* default position: static */
+}
+.box:nth-of-type(1) {
+  background-color: darkcyan;
+  /* set position absolute get removed from the normal flow of page */
+  position: absolute;
+  /* to put this box in the center of the container */
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  /* transform: translateX(-50%) translateY(50%); */
+  /* square is 30% wide, take 1/2 is 15%, - move to the left */
+}
+
+.menu {
+  background-color: darkseagreen;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+}
