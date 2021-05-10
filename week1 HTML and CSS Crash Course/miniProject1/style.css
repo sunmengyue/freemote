@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+ul {
+  padding-left: 10px;
+  list-style: none;
+}
+
+ul > li {
+  padding: 5px 0;
+}
+
+ul > li::before {
+  content: '➡️';
+  margin-right: 3px;
+}
+.card-container {
+  width: 90%;
+  background-color: skyblue;
+  /* height: 80vh; filling with content*/
+  margin: 20px auto;
+  border-radius: 4px;
+}
+
+.hero-image {
+  height: 170px;
+  background-image: url('portrait.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.name-title {
+  padding: 20px 10px;
+  color: #fff;
+}
+.name {
+  margin-bottom: 5px;
+}
+.title {
+  font-size: 10px;
+}
+.section {
+  background-color: #fff;
+  padding: 20px 10px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.section:last-of-type {
+  border-bottom: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.section-title {
+  border-bottom: 2px solid cornflowerblue;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.body-text {
+  color: grey;
+  padding: 10px 0;
+  font-size: 10px;
+}
+
+.body-text > p {
+  margin: 10px 0;
+}
